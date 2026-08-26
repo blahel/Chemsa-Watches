@@ -1,0 +1,65 @@
+/* 
+   base.css — SHARED
+   Reset, colour variables, typography, and the width container. 
+   Changing anything in this file is a group decision.
+*/
+
+
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Variables */
+/* The client's palette. */
+
+:root {
+  --dark:  #1F2937;   /* hero and footer background */
+  --light: #F9FAF8;   /* hero main text            */
+  --grey:  #E5E7EB;   /* secondary text, quote section background  */
+  --blue:  #3882F6;   /* buttons, CTA background   */
+}
+
+
+/* Typography */
+/* Roboto is imported in the <head> of each page, before this file. */
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* TODO: base font size, line-height, default text colour */
+}
+
+/* TODO: heading sizes and weights, from the client's type scale
+   hero h1        48px / 800
+   section h2     36px / 800
+   quote          36px / 300 italic
+   logo           24px
+   nav + subtext  18px                                      */
+
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* The Width Container */
+/* Every band's background is full width; its content sits inside this.
+   Agree the max-width as a team and don't change it alone. */
+
+.container {
+  /* TODO: max-width, margin: 0 auto, horizontal padding */
+}
+
+
+/* Links */
+
+/* TODO: default link colour, and a visible :focus-visible outline
+   so the site is usable with a keyboard */
