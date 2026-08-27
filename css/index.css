@@ -16,7 +16,7 @@
   flex: 1;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-size: 48px;
   font-weight: 800;
   color: var(--light);
@@ -52,6 +52,8 @@
   border-radius: 4px;
   display: block;
 }
+
+/* Features and CTA Section */
 
 /* space above and below your cards */
 .features {
@@ -95,4 +97,124 @@
   justify-content: space-between;
   align-items: center;
   gap: 32px;
+}
+
+/* CSS for Contacts page */
+
+.page-intro {
+  background-color: var(--dark);
+  padding: 64px 0;
+  text-align: center;
+}
+ 
+.page-intro h2 {
+  color: var(--light);
+  margin-bottom: 16px;
+}
+ 
+.page-intro .subtext {
+  color: var(--grey);
+  max-width: 600px;      /* stops a long sentence spanning the full width */
+  margin: 0 auto;        /* 0 top/bottom, auto left/right = centred */
+}
+
+ 
+.contact {
+  padding: 80px 0;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: flex-start;   /* both columns start at the top, without this
+                                the short right column would stretch to match
+                                the tall form */
+  gap: 64px;                 /* space between the two columns only */
+}
+ 
+/* flex: 2 vs flex: 1 = the form gets twice the leftover space.
+   A form needs the room; a list of details doesn't. */
+.contact-form {
+  flex: 2;
+}
+ 
+.contact-details {
+  flex: 1;
+}
+ 
+.contact-form h2,
+.contact-details h2 {
+  margin-bottom: 24px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+ 
+/* All three control types get the same look, so the form lines up. */
+.field input,
+.field select,
+.field textarea {
+  width: 100%;              /* fill the column */
+  padding: 12px;
+  border: 1px solid var(--grey);
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 16px;
+}
+ 
+.field textarea {
+  resize: vertical;
+}
+ 
+.contact-form .btn {
+  border: none;
+  cursor: pointer;
+}
+ 
+/* Browsers italicise by default. We don't want that. */
+.contact-details address {
+  font-style: normal;
+  margin-bottom: 24px;
+}
+ 
+.contact-details h3 {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+ 
+/* Space between each block */
+.contact-details p {
+  margin-bottom: 24px;
+}
+ 
+.contact-details a {
+  color: var(--blue);
+}
+
+/* For mobile devices */
+
+@media (max-width: 768px) {
+ 
+  .contact-inner {
+    flex-direction: column;  
+    gap: 48px;
+  }
+ 
+  /* The collapse trap again: in a column, flex: 2 / flex: 1 would try to
+     share a height that doesn't exist. flex: 1 1 auto = size to content. */
+  .contact-form,
+  .contact-details {
+    flex: 1 1 auto;
+  }
+ 
+  .page-intro,
+  .contact {
+    padding: 48px 0;
+  }
 }

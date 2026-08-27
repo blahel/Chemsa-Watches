@@ -67,9 +67,6 @@ img {
  padding: 0 24px; 
 }
 
-
-/* Links */
-
 /* Header */
 header {
   background-color: var(--dark);
@@ -99,4 +96,23 @@ header nav a {
   font-size: 18px;
   color: var(--grey);
   text-decoration: none;
+}
+
+/* The filled blue button. */
+.btn {
+  display: inline-block;      
+  padding: 12px 32px;         /* 12px top/bottom, 32px left/right */
+  background-color: var(--blue);
+  color: var(--light);
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;      /* kills the default underline */
+}
+
+/* A second version: transparent middle, visible outline.
+   .btn sets the shape, .btn-outline overrides the colours. */
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--light);
+  padding: 10px 30px;         /* 2px less each side, so the border doesn't make this button bigger than the filled one */
 }
