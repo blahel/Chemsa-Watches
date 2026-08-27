@@ -29,37 +29,44 @@
 /* Typography */
 /* Roboto is imported in the <head> of each page, before this file. */
 
+/* font goes on body and inherits down to everything */
 body {
   font-family: "Roboto", sans-serif;
-  /* TODO: base font size, line-height, default text colour */
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--dark);
 }
 
-/* TODO: heading sizes and weights, from the client's type scale
-   hero h1        48px / 800
-   section h2     36px / 800
-   quote          36px / 300 italic
-   logo           24px
-   nav + subtext  18px                                      */
+h1 { 
+  font-size: 48px; 
+  font-weight: 800; 
+  line-height: 1.1; 
+}
+
+h2 { 
+  font-size: 36px; 
+  font-weight: 800; 
+}
 
 
 /* Images */
-
-img {
+/* Every content image should be stopped from overflowing its container: */
+img { 
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 
 /* The Width Container */
-/* Every band's background is full width; its content sits inside this.
-   Agree the max-width as a team and don't change it alone. */
+/* Every band's background is full width; its content sits inside this. */
 
 .container {
-  /* TODO: max-width, margin: 0 auto, horizontal padding */
+ max-width: 1100px; 
+ margin: 0 auto; 
+ padding: 0 24px; 
 }
 
 
 /* Links */
 
-/* TODO: default link colour, and a visible :focus-visible outline
-   so the site is usable with a keyboard */
