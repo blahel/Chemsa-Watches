@@ -98,23 +98,6 @@ header nav a {
   text-decoration: none;
 }
 
-/* The filled blue button. */
-.btn {
-  display: inline-block;      
-  padding: 12px 32px;         /* 12px top/bottom, 32px left/right */
-  background-color: var(--blue);
-  color: var(--light);
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;      /* kills the default underline */
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 2px solid var(--light);
-  padding: 10px 30px;         /* 2px less each side, so the border doesn't make this button bigger than the filled one */
-}
-
 footer {
   background-color: var(--dark); 
   color: var(--grey);
@@ -139,7 +122,11 @@ footer nav a {
 }
  
 @media (max-width: 768px) {
- 
+  .header-inner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
   footer nav ul {
     flex-direction: column;
     gap: 12px;
