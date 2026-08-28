@@ -109,10 +109,39 @@ header nav a {
   text-decoration: none;      /* kills the default underline */
 }
 
-/* A second version: transparent middle, visible outline.
-   .btn sets the shape, .btn-outline overrides the colours. */
 .btn-outline {
   background-color: transparent;
   border: 2px solid var(--light);
   padding: 10px 30px;         /* 2px less each side, so the border doesn't make this button bigger than the filled one */
+}
+
+footer {
+  background-color: var(--dark); 
+  color: var(--grey);
+  padding: 32px 24px;              /* 32px top/bottom, 24px left/right so
+                                      nothing touches the screen edge */
+  text-align: center;              
+  font-size: 16px;                 
+}
+ 
+/* The footer nav: links in one centred row. */
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;          /* kills the bullet points */
+  gap: 24px;                 
+  margin-bottom: 16px;       
+}
+ 
+footer nav a {
+  color: var(--grey);
+  text-decoration: none;     /* no underline */
+}
+ 
+@media (max-width: 768px) {
+ 
+  footer nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
 }

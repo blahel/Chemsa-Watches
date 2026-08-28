@@ -115,7 +115,7 @@
 .page-intro .subtext {
   color: var(--grey);
   max-width: 600px;      /* stops a long sentence spanning the full width */
-  margin: 0 auto;        /* 0 top/bottom, auto left/right = centred */
+  margin: 0 auto;        
 }
 
  
@@ -177,7 +177,6 @@
   cursor: pointer;
 }
  
-/* Browsers italicise by default. We don't want that. */
 .contact-details address {
   font-style: normal;
   margin-bottom: 24px;
