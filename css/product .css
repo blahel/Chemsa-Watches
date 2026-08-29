@@ -13,10 +13,15 @@ body {
 
 /* The Grid Container */
 
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 .container {
-  display: flex;
-  justify-content: flex-start; /* Centers horizontally (optional) */
-  height: 400px; /* Or any fixed/min height */
+     display: flex;
+    justify-content: flex-start; /* Centers horizontally (optional) */
+    height: 400px; /* Or any fixed/min height */
 }
 
 .product-list {
