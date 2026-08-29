@@ -12,6 +12,14 @@ body {
 }
 
 /* The Grid Container */
+
+.container {
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: center; /* Centers horizontally (optional) */
+  height: 400px; /* Or any fixed/min height */
+}
+
 .product-list {
     display: grid;
     /* Automatically creates columns that are at least 250px wide, scaling up if space allows */
