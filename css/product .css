@@ -1,101 +1,15 @@
-/* Page intro */
-.page-intro {
-  background-color: var(--dark);
-  padding: 48px 0;
-  text-align: center;
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.page-intro h2 {
-  font-size: 36px;
-  font-weight: 800;
-  color: var(--light);
-  margin-bottom: 12px;
+body {
+    font-family: 'Roboto', Verdana, sans-serif;
+    background-color: #f4f7f6;
+    padding: 40px;
 }
-
-.page-intro .subtext {
-  font-size: 18px;
-  color: var(--grey);
-}
-
-/* space above and below your cards */
-.products {
-  background-color: var(--light);
-  padding: 80px 0;
-  text-align: center;
-}
-
-/* the four cards jump side by side */
-.product-list {
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-/* all four exactly the same width */
-.product-card {
-  flex: 1;
-}
-
-/* the images */
-
-.product-card img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 1px;
-  border: 3px solid var(--blue);
-  margin-bottom: 12px;
-}
-
-/* Values section */
-.values {
-  background-color: var(--grey);
-  padding: 64px 0;
-  text-align: center;
-}
-
-.values h2 {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 32px;
-}
-
-.values-list {
-  display: flex;
-  gap: 24px;
-}
-
-.values-list article {
-  flex: 1;
-  background-color: var(--light);
-  padding: 24px;
-  border-radius: 8px;
-}
-
-.values-list h3 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.values-list p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* Stack on smaller screens */
-@media (max-width: 768px) {
-  .mission-inner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .values-list {
-    flex-direction: column;
-  }
-}
-
-
-
 
 /* The Grid Container */
 .product-list {
