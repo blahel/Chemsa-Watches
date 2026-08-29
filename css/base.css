@@ -97,6 +97,24 @@ header nav a {
   color: var(--grey);
   text-decoration: none;
 }
+/* Burger menu (hidden checkbox drives it) */
+.menu-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 28px;
+  height: 3px;
+  background-color: var(--light);
+  border-radius: 2px;
+}
 
 footer {
   background-color: var(--dark); 
@@ -138,8 +156,29 @@ footer nav a {
 }
 @media (max-width: 768px) {
   .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
     flex-direction: column;
-    gap: 16px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark);
+    padding: 16px 0;
+    gap: 12px;
+  }
+
+  .menu-toggle:checked ~ nav ul {
+    display: flex;
   }
 
   footer nav ul {
